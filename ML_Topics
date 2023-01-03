@@ -1,0 +1,1197 @@
+14th August:
+ML basics
+AI Def
+ML def
+Supervised def
+unsupervised def
+semi- supervised def
+Linear regression
+
+21st August:
+Assumptions of linear equations(Exogenety, Homoscedacity, Multicollinearity)
+Residual
+Gradient Decent
+r2-squared statistics
+
+22nd August:
+First ML model(one feature and target)
+										from sklearn.linear_model import LinearRegression - library
+sklearn library usage
+
+28th August:
+Bias and variance
+multi-linear regression(multiple feature and one target)
+impact analysis and Feature Selection(FS)
+adjusted r-squared
+statistical modelling approach for FS
+										import statsmodels.formula.api as smf - library
+multi-collinearity detection: 
+	based on heat map(correlation)
+	based on VIF
+Regularization:
+	LASSO (L1- form)
+	Ridge (L2 - form)
+	ElasticNet
+
+29th August:
+Implementation of topics from last theory class
+										from sklearn.preprocessing import StandardScaler - library
+										from statsmodels.stats.outliers_influence import variance_inflation_factor - library
+										from sklearn.linear_model import Ridge, Lasso, RidgeCV, LassoCV, ElasticNet, ElasticNetCV - library
+implementing standardscaler
+implementing a linear model
+implementing variance_inflation_factor
+implementing lasso
+cross validaiton
+implementing ridge
+implementing elastic
+
+
+4th September
+Model Deployments - Heroku, AWS, Azure
+Ops OR CI/CD pipeline homework
+
+5th September
+Logistic Regression
+Sigmoid Function
+Logit function
+Cost function for logistic regression
+Evaluation metrics for Logistic regression:
+	Confusion matrix
+	Accuracy
+	Recall(Sensitivity)
+	Precision
+	F1- score
+	Specificity
+	ROC (Receiver Operator Characteristics)
+	ROC curve
+	AUC (Area under the curve)
+
+11th September:
+Logistic Regression Implementation
+
+12th September:
+Decision Tree
+Gini
+Entropy & information gain
+
+18th September:
+Decision Tree Regression
+CART Algorithm
+Pruning - Post Pruning and Pre Pruning
+Ensemble Technique
+Bagging
+Pasting
+Random Forest
+Boosting
+Ada Boosting
+
+19th September:
+Gradient Boosting
+XG Boost: Gain, Hessian , Similarity
+KNN(Lazy Learner)
+Eager Learner
+Euclidean Distance
+Manhattan Distance
+K- Dimensional Tree(k-d tree)
+Ball Tree
+Support Vector Machines
+Kernel Trick
+
+25th September:
+Challenge Discussion
+
+26th September:
+Decision Tree implementation
+Class cancelled
+
+3rd October:
+Decision Tree implementation
+Pruning (game of ccp_alpha(cost_complexity_pruning_path)) - post pruning
+Hyperparameter Tuning
+Grid search CV & Random Search CV
+
+9th October:
+Bagging Classifier
+Random Forest
+latest research paper: paperswithcode.com, google AI
+
+10th October:
+KNN implementation✋
+Support Vector Machines (SVM):SVR and SVC
+Stacking
+
+23rd October:
+Unsupervised lerning
+Clustering
+K-means
+WCSS
+Concept of Inertia
+Elbow Method
+Drawback of K-means
+K-Means ++
+Mini Batch Kmeans
+Hierarchical Clustering
+Agglomerative approach(Bottom up approach)
+Devisive approach(top down approach)
+Dendogram graph
+DBSCAN
+
+24th October:
+Evaluation metrics for Clustering:
+Rand Index
+Jaccard Coefficient
+Entropy
+Purity
+Silhouette Score
+Cohesion
+Separation
+Dimensionality Reduction
+Curse of Dimensionality
+PCA
+Explained Variance Ratio
+Screen plot
+PCA implementation
+Eigen Value & Eigen Vector
+
+30th October:
+Single Value Decomposition implementation(to be done)
+KMeans implementation
+MiniBatchKMeans implementation
+DBSCAN implementation
+metrics implementation: adjusted_rand_score, jaccard_score
+Naive Bayes - for categorical dataset
+Naive Bayes - for continuous dataset
+Naive Bayes implementation
+
+31st October:
+Optuna and its implementation
+XGBoost Regression implementation
+XGBoost Classification implementation
+Text Analytics
+import nltk: sent_tokenize, word_tokenize, stopwords, punctuation
+POS Tagging
+Stemming
+		from nltk.stem import PorterStemmer
+		from nltk.stem import LancasterStemmer, SnowballStemmer
+lemmitization
+				from nltk.stem import WordNetLemmatizer
+				lemma.lemmatize('went', pos = 'v')
+TF-IDF(term frequency - inverse document frequency)
+
+6th November:
+ML Project KT
+
+13th November:
+WaferFault Detection part-1
+
+14th November:
+WaferFault Detection part-2
+Code Audit
+
+20th November:
+Testing the applicaiton locally
+Configure code on GitHub
+Creating account on Docker hub
+Creating account on Circle CI
+Using Docker Hub & crcle CI for establishment of CI/CD pipeline
+----------------------------------------------------------------
+SVC - Source Version Control
+Branches in GitHub
+DVC - Data Version Control
+What is Docker? - It gives the runtime environment for our project
+Docker Image - image of our system
+Heroku(or any cloud platform) will provide the container to run the docker image
+
+
+Docker Hub -> CircleCi
+ACR(Azure Container Registry) - > AKS(Azure Kubernetes Service)
+Amazon ECR(Elastic Container Registry) - > ECS(Elastic Container Service)
+----------------------------------------------------------------
+
+21st November:
+Setup project locally
+Understand the remaining code and execute the wafer project
+We will perform commit to code for deployment on Heroku using CI/CD pipeline(CircleCI) which we have already established
+
+27th November:
+Ineuron Mega Challenge Project - part 1
+Download and setup the project
+created the environment variable in local system
+Mongo DB
+Registration
+Login/Logout
+Initializer
+
+28th November:
+Ineuron Mega Challenge Project - part 2
+Cloud Storage Layer
+
+4th December:
+Configuring mega challenge for my mongo db
+configuring project inside the ML platform and insdie local system
+
+To configure Ineuron Mega Challenge Project:
+1.	you need to have account of Azure, GCP,Aamazon
+2.	we have created storage account in Azure & copied conneciton string
+3.	Created a user in Amazon to get the secret key and Access ID
+4.	In GCP-> IAM -> Service Account ->download .json key
+5.	Login to google account and generated app key for E-Mail
+6.	Get mongo db username, password and url
+7.	Update your "project_config.yaml" and "gcp.json" file
+8.	Run your "setup_configuration.py"
+9.  Set your mongo db key in environment variable. Key will be present in "project_config.yaml"
+10.	Run your project using app.py file(or main.py file)
+
+5th December:
+
+DPR -Detail project report
+2-3 DPRs
+Tell me about your project:
+	1. project name
+	2. duration - 6 to 8 months
+	3. team - 50members : 
+						10 - DS
+						5 Functional DS 
+						5 UI/UX 
+						5 analytics side 
+						10 python developer 
+						5 leads 
+						5 OPs 
+						5 admin
+	
+	4. Data - 
+	5. Development strategy - CI/CD pipeline, devlopment, UAT ,pre-prod, prod env
+	6. Production - Dockerize, host API, external plugins, external integraitons
+	7. Post production(Hypercare) - Retraitaing approach, minor - major bugs. 100-200 bugs weekly. 2 hours SLA for each bug
+	8. All Tech: python scritpting, Flask, MLflow, Jenkins(CI/CD), DVC, Cloud deployment stacks, dashboards(enterprise or customize)
+	9. Go to ineuron github - interview quetions - Day 30
+	-----------------------------
+	i.	Conversational AI project
+	ii. POC
+--------------------------------------------------------------------------------------------------------------------------
+MLFlow integration with fitbit project
+
+18th Decembr:
+Fitbit project deployment in Azure using docker image and GitHub Actions
+Fitbit project deployment in AWs using docker image
+connecting dockerhub to AWs
+Adding security group in AWS
+
+19th December:
+ChatBot(example: ilabank)
+Chatbot FrameWork: Dialogflow , Amazon Lex, Azure LUIS(Language understanding intelligent service) , RASA
+Dialogflow  - basic teminologies and hands-on
+Amazon Lex  - basic teminologies and hands-on
+Intent
+Training phrase (equivalent to Utterances in AWS Lex)
+Entities(equivalent to Slot in AWS Lex)
+Fulfillment
+Integrations in Google DialogueFlow(used Telegram for integration)
+AWS Lambda function (equivalent to WebHook in google dialogueflow)
+
+21st December:
+Creating a Lambda function
+python code for Lambda function
+Adding the lambda function to the intent created
+Integration in Lex
+Rasa Framework: commands: rasa init, rasa x, rasa shell
+Azure LUIS
+
+23 December:
+MLOPS/AIOPS: 											https://drive.google.com/drive/folders/1RZYM_7-QanJM3YKP96JAyH9vNB7Z3C3b - 2 batches combined
+														https://drive.google.com/drive/u/0/folders/1EM1vVItEutr-wHAi_uWW5mhLfdnt9e51 - Deep learning 
+Objective: Shared PPT
+Hidden technical Debth in machine learning systems
+
+8th January:
+Deep Learning
+Why Deep Learning is important?
+Artificial neural network(ANN) intro
+Biological neural netwok(BNN)
+Logic Gates
+Perceptron
+Perceptron weight update rule
+
+9th January:
+Perceptron Implimentation
+Drawback of perceptron
+Multi-Layer Perceptron(MLP)
+Artificial neural network(ANN)
+Activation function: Sigmoid, ReLU
+what if we dont use activation function?
+
+15th January:
+CPU v/s GPU(wrt deep learning training)
+Tensorflow Introduction using Keras
+implementing tensorflow with MNIST
+Scaling the image
+Softmax Activation function
+
+16th January:
+ANN with callbacks
+Tensorboard callbacks: Earlystopping cb, checkpointing cb, tensorboard cb
+Vectors
+Cartesian co-ordinate s/m, Polar,Cylindrical,Spherical co-ordinate s/m
+Theory of Differentiation
+First principle of Differentiation
+Some differentiation formulas(Sum,Product,Division rule)
+Concept of minima & maxima
+Partial derivatives
+
+18th January:
+Gradients
+gradient ascent and decent
+
+29th January:
+Chain Rule
+Back Propogation
+Tensor
+Tensorflow
+Training a linear regression model from scratch
+
+30th January:
+Problems in training NN
+Vanishing Gradient
+Exploding Gradient
+Choice of activation function
+Sigmoid, TanH, ReLU, Leaky Relu, Paramteric Relu activation
+Softmax, Elastic linear unit(ELU),Scaled ELU, Swish , swish_beta, softplus,hard sigmoid, softsign, MaxOut activation
+Weight Initialization
+
+1st February:
+Batch Normalization
+Implementaion of BN
+Transfer Learning
+Implementation of TL
+
+2nd February:
+Fast Optimizers
+Momentum optimizer
+Leraning rate schedulers
+Algorithm of momentum optimization
+
+5th February:
+NAG(Nesterov Accelerated Gradient)
+AdaGrad(Adaptive gradient)
+Dot product rule
+
+6th February:
+RMS prop
+Adam
+Loss function
+MAE,MSE, Huber , Pseudo huber(regression)
+Hinge, binary cross entropy, categorical CE, Sparse categorical CE(classification)
+
+10th February:
+Regularization
+L1
+L2
+L1_L2
+MaxNorm
+Dropout
+
+12th February:
+Computer Vision Basics
+Understanding image dataset
+Filters: sobel
+Practicals
+
+13th February:
+Convolution in terms of signals, images
+image maps
+padding
+pooling: max, min, avg
+global average pooling
+practicals
+
+19th February:
+dogcat project
+ImageDataGenerator: runtime data augmentation technique
+image augmentation technique : Cutout , Ricap(Random Image Cropping and Patching)
+
+20th February:
+CNN project - dog cat(in modular form)
+
+26th February:
+CNN + MLFlow packaging
+partially completed GET_DATA
+
+27th February:
+CNN + MLFlow packaging - continued
+completed remaining GET_DATA pipeline
+completed BASE_MODEL pipeline
+completed CALLBACKS pipeline
+
+5th March:
+Pytorch introduction(low level API)
+basic torch operations
+
+6th March:
+Linear Regression implementation using Pytorch
+
+12th March:
+CNN - implementation - Pytorch - jupyter notebook
+
+20th March:
+CNN - implementation - Pytorch - jupyter notebook - continuation
+Image normalization
+Transfer learning in Pytorch(Using AlexNet) - Partially
+
+26th MArch:
+Transfer learning in Pytorch - Part 2
+Different CNN architecture list
+LeNET-5 Architecture(MNIST - Yann Lecunn)
+RBF kernel
+AlexNet Architecture
+Local Response Normalization(LRN)
+Implementation of AlexNet
+
+27th March:
+Kernels working with the input pixels(R,G,B) - Filter mapping with Input matrix
+VGG-16
+Implementation of VGG-16 - Part -1
+
+28th March:
+Implementation of VGG-16 - Part -2
+Implementation TFlite
+Edge devices introduction
+
+2nd April:
+ML Project discussion - Movie-Recommender-System-Using-Machine-Learning-content based recommender system
+StreamLit intro
+Recommender system intro
+types of recommender systems:
+							Content based filtering
+							Collaborative filtering
+							Hybrid based
+Count Vectorizer
+Cosine similarity
+
+3rd April:
+ML Project discussion - Book-Recommender-System-Using-Machine-Learning-collaborative based filtering
+
+9th April:
+Functional CNN architecture
+Inception network
+Overlapping pooling
+Google Net
+Skip connection
+ResNet
+
+10th April:
+Object detection: Bascis (teachablemachine.com, netron.app)
+Localization
+Naive approaches to object detection
+Sliding window approach and its Drawbacks
+Common components available in almost all onject detection models
+Region Proposal
+Feature extraction & Network Prediction
+Non - Maximum Supression(NMS)
+Intersection Over Union(IOU)
+Frame per second(FPS)
+Mean average prcision((mAP)
+implementations of OpenCV
+
+16th April:
+Object detection project - Sign_Language_detection_using_YOLO_V5
+
+17th April:
+Doubt Clearing session of last class
+
+18th April:
+RCNN family(Region-Based Convolution neural network)
+RCNN
+Selective search algorithm
+Fast RCNN
+
+20th April:
+Faster RCNN - https://slides.com/c17hawke/objdet    - slide URL
+ROI Pooling
+Image Thresholding
+Binary thresholding
+Otsu's Binarization(thresholding)
+
+21st April:
+YOLO (You only look once) - https://docs.google.com/presentation/d/e/2PACX-1vR5Ja8JEyIheOTY-EpBg5BKiDYFw6BpfKlgrj2yxKgZX1EIbO_3RGlyHn9Y8ohSLdw9VJgEEi3iJIV3/pub?start=true&loop=true&delayms=60000     slides URL
+
+22nd April:
+
+
+23rd April:
+Yolo V2
+WordTree Hierarchical classification
+YOLO v3
+SSD(Single Shot detection) - https://docs.google.com/presentation/d/1oNPyJXCmU7J07YD-V0eJUehBh0kLCw5S_W23T13YzaU/edit#slide=id.g179f601b72_0_51 - slide URL
+Upsampling(Dilation)
+Possible Applications of Object detection
+
+24th April:
+TFOD 2 setup using Paperspace
+
+30th April:
+GPU setup in local s/m
+Tensorflow Object detection example - local setup
+
+1st May:
+Tensorflow Object detection example  - local setup - continuation(training)
+Interpolation - increase the size of image 
+Tensorflow Object detection example  - Colab setup
+Image registration v/s feature extraction ?
+
+7th May:
+Object detection automation - https://github.com/c17hawke/OD_automation_2
+Object segmentation: Semantic, instance, panoptic segmentation
+Detectron 2
+Mask RCNN
+loss calculation in Mask RCNN
+
+8th May:
+Deep sort YOLO project - object tracking project
+Difference between object detection and tracing
+levels of Object tracking
+Challenges of object tracking
+Kalman filter
+SLAM(simultaneous loclalization and mapping algorithm)
+
+14th May:
+NLP
+Sequential Learning
+RNN(Recurrent neural network)
+Types/Configurations based on problem statements
+Seq-to-seq
+seq-to-vec
+vec-to-seq
+encoder-decoder
+LSTM(Long short term memory)
+Back Propogation through time(BPTT)
+Gates & its equations in LSTM
+
+15th May:
+GRU(Gated recurrent unit)
+Disadvantages of LSTM & GRU
+Word Embeddings
+Implementation of Letter Embeddings
+
+21st May:
+Text Generation using GRU(Implementaion) - partial
+Books for NLP: 	Natural Language Processing with Transformers
+				Practical Natural Language Processing
+				Natural Language Processing with Pytorch
+
+22nd May:
+Text Generation using GRU(Implementaion)
+StateLess, StateFull RNNs
+Bi-directional RNNs
+Sentiment analysis/Text Classification using Bi-LSTM(Implementaion) - partial
+
+23rd May:
+Sentiment analysis/Text Classification using Bi-LSTM(Implementaion)
+
+28th May:
+NLP Pipeline
+
+29th May:
+Neural Machine Translation(NMT)(Encoder-Decoder - RNN based)
+Attention Mechanism
+Self Attention(Scaled Dot Product Attention)
+Stacking of self attention
+Multi-Head attention
+Stacking of multi-head attention
+Transformers(Encoder-Decoder - transformer(attention) based)
+Positional Encoding
+Difference b/w RNN & Multi-headed attention 
+Hugging Face short intro
+
+4th June:
+BERT(Bi-Directional Encoder Representation from Transformer)
+Masked language modelling(MLM) & Next Sentence Prediction(NSP)
+BERT Architechture: Two variants of BERT: Base , Large
+Why BERT when transformers existed?
+BERT Training phases: Pre-training, Fine-tune
+BERT-ktrain implementation : https://colab.research.google.com/drive/1KuHHcsELkQR6DFmTHc2Hr14cR5A5ZU2w?usp=sharing
+
+5th June:
+GPT(Generative pre-trained transformer)
+ULMFIT(Universal Language Model Fini Tuning fot Text Classification)
+Decoder based model
+Decoder stack
+Masked multi-head attention
+Classification head: greedy, beam, top-k, top-p search algorithms
+Implementation of Masking in pytorch --> 
+example: 
+	masked_scores = torch.tril(score).unsqueeze(0)
+	masked_score.masked_fill(mask_score==0, -float("inf"))
+k-train-BERT-QA implementation
+Text generation-GPT(aitextgen) implementation
+
+11th June:
+Transformers implementation
+implementation:
+	zero-shot transformer
+	text generator
+	unmasking
+	NER
+	Question-answering
+	summarization
+	translation
+Gradio- web app for data science
+How transformer pipeline works?
+NLP book: Natural Language Processing with Transformers Book by Leandro von Werra, Lewis Tunstall, and Thomas Wolf
+
+12th June:
+more Implementation on Transformer:
+	tokenizer
+	summary of all 4 notebooks
+Fine Tuning
+uploading model in huggingface account
+
+18th June:
+mkdocs for beautiful template/documentation - <github-username>.github.io/<repo_name> - https://github.com/c17hawke/DVC-project-Docs-template
+ctrl+shift+r - hard refresh
+NLP project using DVC and ML - part 1
+n-grams
+Count Vectorizer
+stop words
+mkdocs serve
+
+19th June:
+NLP project using DVC and ML - part 2
+TF-IDF(Term frequency Inverse document frequency)
+											from scipy.sparse import csr_matrix - for storing the sparse matrix in compressed form
+											for restoring from sparse to dense , use todense() function
+											sparse.hstack: horizontal matrix
+											
+Usage of __init__.py from all folders inside a project.(from utils.common import *)
+We dont write "from keras.engine.sequential import Sequential". Instead we write "from keras.models import Sequential"
+We do this for user, so that they can easily use the packages while the segrgation developer do for their own clarity
+CML - continuous ML in DVC
+
+25th June:
+Loading any dataset from hugging face
+NLP Project structure
+Why we import scikit-learn as sklearn as package?
+Explaining setup.py
+NER NLP Project (using Class-based approach(OOPS)) - part-1
+
+26th June:
+NER tagging explaination
+NER annotator tool
+Prepaing NER custom dataset
+NER NLP Project (using Class-based approach(OOPS concept)) - part-2
+
+2nd July:
+NER revision
+NER Project
+Artifacts are all the files and folders generated by your s/m\
+Explaining project structure - ketan - part-3
+Modules covered NER project: data ingestion, data preparation, data validation, model_architecture, configuraitons.py
+
+3rd July:
+NER projet part-4
+Monolythic v/s micro-services(scaling. it is better)
+Modules covered: model_training, train_pipeline
+
+9th July:
+Reinforcement Learning(agent, environment, action, reward, observation)
+Agent
+Environment
+State
+Action
+Reward
+Policy
+Supervised learning
+Unsupervised learning
+Reinforcement Learning
+Policy space, policy search
+Stochastic policy
+Genetic Algorithm
+Hello world of RL - Cart Pole example
+Episode
+Action is defined on how much Torque has been applied
+Implementation of a simple policy in Cart-pole environment using rule based policy(basic policy)
+
+10th July:
+np.newaxis()-->  rturns the new axis
+Implementation of a simple policy in Cart-pole environment using Neural network policy
+Eploration v/s Exploitation concept
+Credit Assignment Problem
+	- Discount ratio/factor(gamma symbol)
+	- Sum of discounted rewards
+Policy Gradient: optimize learnable parameters of policy by following the gradients towards higher rewards(maximizing rewards)
+Comparison of basic policy and NN policy(via implementation)
+
+16th July:
+Use Cases of NLP:
+Brand measures: In business, time & revenue are very important
+Automatic Sppech recognition(ASR) (only library names)
+Spell correction(SC) (only library names)
+Audio Segmentation(AS) (only library names)
+Search Text (only library names)
+Brand Measures project implementation
+
+17th July:
+Paraphrasing operation(Seq to Seq problem): Restructuring the sentence keeping the meaning same
+ParaPhrasing implementation- (cant do in colab as it requires large RAM)
+Cons of Transformer models
+FaceRecognition Project implementation - part 1
+State of the Art NLP Libraries/Comparison
+
+23nd July:
+YOLO V6 setup(chess dataset from roboflow) - chess piece detection(object detection)
+
+24th July:
+YOLO v7 (official repo: https://github.com/WongKinYiu/yolov7)
+		(unofficial repo: https://github.com/jinfagang/yolov7)
+by using labelimg.exe
+Data prep for yolo v7
+Sign language detection using yolo v7
+
+30th July:
+FaceRecognition Project implementation - part 2 - explaination
+Face recognition = face detection + face identification
+Haar cascade filter - ML OD program that identifies objects in an image and video
+Edges/Gradients 
+Gabor filter - filter to detec gradients(photoshop)
+sequence of image formation: edges/gradients -> Textures -> patterns -> parts of object -> object(eg: human faces) -> Image/Frame -> Scene
+Transitional blocks v/s convolutional blocks
+MTCNN(Multi-Task Cascaded Convolutional Neural Networks) - DL algorithm to detect faces and facial landmarks
+What is embedding(in face detection) - something that is available in higher dimension in the vector space
+Dlib library
+Deepface
+ArcFace
+FaceNet
+Triplet Loss - loss for face recognition (Facenet paper)
+VidGear - Alternative of OpenCV
+
+31st July:
+Comparison of SOTA(State Of The Art) NLP Libraries - Structural Integrity & Context Language
+Grammar - english has 8 POS & NLP(English) has 45 POS
+Any english sentence has: subject + verb + object
+Different Part of Speech(POS)
+POS Disambiguation
+Example of POS Disambiguation: Show me show timings for the movie, Soft drink Can & normal english 'can'
+Bidirectional POSTagger
+Linguistic Analysis
+Coreference resolution: It is the task of finding all expressions that refer to the same entity in a text. Example: I went to Nilesh'place and he was sleeping
+Allen NLP - NLP library
+
+13th August:
+ML Monitoring systems - we can monitor:
+									s/m metrcis,
+									application server
+									API server
+									status of application(pass/fail)
+
+Prometheus - event monitoring & alerting s/m (https://dev.to/darkart108/prometheus-made-easy-571o)
+Grafana(for visvualizing metrics)
+Golang language is used for cloud native application
+Prometheus Architecture
+Time series database(TSBD): Influx, TimescaleDB is an example of TSBD
+PromQL - Prometeus query language
+Scrape Engine(metric) - two methods to scrape metrics :- pull method, push gateway method
+Kinds of Metrics inside prometheus server:
+										Counter
+										Gauge
+										Histogram
+										Summary
+Prometheus Backened
+Prometheus server
+'/metrics' endpoint
+Exporters - it is used for exporting all metrics of application and put on TSBD. it is when application does not have '/metrics' endpoint
+Push Gateway method
+Service Discovery
+Alerting in Prometheus
+Launching prometheus and grafana via docker compose
+Walkthrough over Prometheus and Grafana local host Interface
+go_gc_duration_seconds - an example of Go metric
+
+14th August:
+project: Real time data drift monitoring system - DEMO PENDING
+Data Drifting(example: house price dataset. the price changes quickly of the house)
+Tools used: Prometheus: scrape the data using multiple services
+			Grafana: for visualization
+			Mongo DB: as cloud version database
+			Prefect - To create data analytic pipeline and running multiple ETL(extract,load & transform) jobs. It is similar to Airflow
+			Evidently: To create report for checking the drifting of our model
+Advantage of using data in Parquet format(for big data) over csv
+tfrecords: stores the data in binary format in tensorflow. example: storing images
+Evidently AI
+Integration of Evidently with Grafana (https://docs.evidentlyai.com/integrations/evidently-and-grafana)
+Prefect - Data pipeline orchestration tool
+Cvedia - video analytics and computer vision solutions (https://www.cvedia.com/)
+Jenkin X - tool for data science. CI/CD on cloud (https://jenkins-x.io/v3/mlops/) suppots NLP
+explaining docker file and docker compose for project
+Docker compose: combines multiple docker files
+
+20th August:
+Big Data - Introduction
+GFS - Google File system
+HDFS - Hadoop File System
+Memory units
+5Vs of Big Data
+Scale In & Scale Out
+Hadoop Timeline
+Hadoop Characteristics
+Hadoop Ecosystem
+Enterprise Big Data Architecture
+Cluster
+MAster-Slave
+Node:
+	Name Node
+	Data Node
+Hadoop installation (https://github.com/sudh9931/Big-Data-installation/blob/main/big%20data%20installation.txt)
+
+21st August:
+project: Real time data drift monitoring system - EXECUTION
+Cold Start problem
+Hadoop Architecture (1.x)
+HDFS layer
+Map Reduce Layer
+File System: read operation
+			 write operation
+Secondary name node
+Single point failure
+Job Tracker
+Task Tracker
+Block
+Replication factor
+Rack
+Rack Awareness
+Difference between Hadoop 1.x & 2.x
+Hadoop Architecture (2.x)
+YARN Architecture
+Hadoop Installation
+
+27th August:
+HDP and Cloudera walkthrough of UI
+Hadoop commands and practical
+cloudera cred(cloudera/cloudera)
+HDP cred(maria_dev/maria_dev) http://127.0.0.1:8080 port: 2222 (https://www.cloudera.com/tutorials/learning-the-ropes-of-the-hdp-sandbox.html)
+hadoop fs == hdfs dfs
+command list: hdfs dfs -ls /
+			  hadoop fs -mkdir <folder_name>
+			  hadoop fs -put <file_name> /<path in hadoop to place file>
+			  hdfs dfs -touch <path/file_name>
+Hadoop 3.x
+
+28th August:
+get cmd: hdfs dfs -get /test/test.csv
+put cmd: hdfs dfs -put test.csv /test
+practical Java program on word count on hadoop(not completed)
+Hive
+OLAP v/s OLTP
+Data warehouse
+Data lake
+Hive Architecture
+Data types in Hive
+Partitioning and Bucketing in Table
+
+3rd September:
+Hive data model
+SERDE operation
+cmds:
+show databases;
+create database ineuron location "/big-data-demo/";
+create table neelesh_data(emp_id int, location string, email_id string)
+row format delimited 
+fields terminated by ',';
+External and internal(managed) table
+Spark: data processing engine - SQL, straeming, ML, graph based operation. Spark supports java, python, scala, R
+cmd: spark-shell
+
+4th September:
+External table: the data still remians in the file even after dropping the table unlike internal tabe
+external table create command:
+Create external table employee
+(
+emp_name string,
+Unit string,
+Exp int,
+Location string
+)
+Row format delimited 
+Fields terminated by ','
+Location 'home/maria_dev/data';
+Partition table
+Its command:
+Create table emp_details_partition
+(
+Emp_name string,
+Unit string,
+Exp int
+)
+Partitioned by (location string);
+describe formatted emp_details;
+Set hive.exec.dynamic.partition.mode=nonstrict;
+insert overwrite table emp_details partition(location) select * from employee;
+load data local inpath '/apps/hive/warehouse/emp_details/eme_data.txt' into table emp_details;
+Dynamic and Static partition
+create table bucket_user
+(
+id int,
+name string,
+salary int,
+unit string
+)
+clustered by (id)
+sorted by (id)
+into 2 buckets;
+Spark: data processing engine
+RDD(Reselient distributed dataset)
+RDD: Tranformation
+	 Action
+Lazy evaluation
+cluster manager
+executer
+DAG
+
+10th September:
+Spark Context
+Sprak Execution context
+Comparing Hadoop and spark architecture
+RDD(Reselient distributed dataset): resilient means fault tolerant
+RDD: Tranformation(example: map)
+	 Action(example:join)
+DAG(Direct Acyclic Graph): It gets executed as soon as we call an RDD action. and the whole process is called lazy evaluation
+Lazy Evaluation
+Spark installation
+Databricks account creation: azure based ,used for spark
+Scala program execution
+
+11th September:
+Two types of Big Data: Batch data & streaming data
+Kafka: An event streaming platform used to collect, process, store, and integrate data at scale(developed by linkedin)
+Kafka broker/node/server
+Kafka partition
+Kafka producer/publisher: producers are applications that write messages to a topic.
+Kafka consumer/subcriber: consumers are applications that read records from a topic.
+publisher and subcriber(Pub/Sub)
+consumer group
+Kafka manager (zoo keeper)
+kafka replicas
+kafka logs
+kafka offset: the offset is a simple integer value. The same integer value will use by Kafka to maintain the current position of the consumer
+kafka cluster: group of broker
+Topic: data get stored which producer sends. the schema of data
+Stateless process: broker are independent and cannot connect to each other. hence we require zoo keeper(manager)
+Advantages of kafka: low latency, scalibility, distributed, variety of use case, real time data handling, fault tolerant 
+Disadvantages of kafka: behaves clumpsy, lack of pace, reduce performance, no complete set of monitoring
+Applications: messaging(pub/sub), website activity tracking, log aggregation, stream producer(sensor/IOT), time based data(stock market)
+kafka architecture
+kafka Workflow
+Kafka installation(https://kafka.apache.org/quickstart)
+Apache Airflow(work only on linux system): Oozie is similar to this but written in java
+
+17th Sept:
+Spark project - part-1
+
+18th September:
+Spark Project - part-2 - kafka and spark pipeline
+
+24th September:
+Data Analytics
+Data base v/s data warehouse
+OLTP = Online Transactional Processing
+OLAP = Online Analytical Processing
+ETL (Extract transform laod)
+Business Intelligence
+Data Lake
+Data Mart: same as table
+PgAdmin(Postgre SQL), Pentaho, java installation, PgAdmin password: test
+Data warehouse layers: Staging, Cleansing, Core layer
+Two staging area: Temporary and Persistent
+Schemas in pgAdmin: logical division of data or structure of tables: Database -> Schemas -> Tables
+postgre SQL Implementation
+pentaho implementation: Extract and load
+
+25th September:
+pentaho implementation: Extract and Transformation
+postgre(as data warehouse) implementation with pentaho
+delta load - implementation:
+	creating kettle transformations
+	setting and getting variable values in pentaho
+creating job from pentaho transformations
+Snowflake: data warehousing solution
+Snowflake Overview with UI
+Fivetran: ETL tool
+Different ETL tools at Enterprise, open source , cloud native level
+Fivetran integraiton with snowflake - implementation
+Informatica: just showing UI
+Stitch: just showing UI
+
+1st October:
+Data Analytics- ppt presentation
+Power Bi
+Types of applications: Power BI Desktop, service(SaaS), Mobile
+Gartner: where AI is heading in future
+Power BI Installation
+Power BI UI walkthrough
+Different charts: Column chart
+				  Stacked coumn chart
+				  Pie chart
+				  Donut Chart
+				  Funnel chart: If the data goes from sequence stages and number of stages is atleast 3, then we can use this chart
+				  Ribbon chart: Line + stacked column chart
+				  Map chart
+				  filled map chart
+Conditional formatting
+Matrix
+
+8th October:
+Different charts: Line chart
+				  Drill Down
+				  Area Chart
+				  Scatter chart
+				  Waterfall chart
+				  Tree map
+				  Gauge chart
+				  Card
+				  multi row card
+Using filters on Visvuals and Page, on all pages
+Drill through fields: destination page should have the drill through field
+				  Slicer
+Demo project
+
+9th October:
+Advance charts: 3rd party charts(Need to sign in with work email id)
+				Animated bar chart
+				Donut chart
+				Word cloud
+				Sankey chart
+				Play axis
+				Scroller
+Power BI Service(Publish a report)
+Export to ppt, pdf, image, live data
+Workspace
+Reports
+Dashboard: single page that tells a story through visvualizations. Available only in power BI service and  not in power bi desktop
+Buttons: Back,Page Navigation, Bookmarks, Drill through
+Connectors: Snowflake, postgres SQL, SSMS(sql server)
+Install SQL server
+Power Query: Transform data(for uncleaned data): only Introduction
+
+15th October:
+Power Query functions: 
+Text Functions: Merge columns
+				Close & Apply function
+				Split by delimiter and trim
+				Text between delimiters
+				Text after delimiter
+				change upper/lower case/capitalize each word
+Date Functions: extracting year, time, age, difference between dates
+Number functions
+Working with files: appending multiple csv files(same schema)
+					append multiple excel sheets in same file(same schema)
+					append with different columns
+					append multiple excel fom different folder
+					writing custom function to append sheets of excel file
+					apending different file format
+merging different tables on one sheets
+merge multiple excel files
+merge multiple file formats
+
+16th October:
+Conditional columns
+Fill down/ Fill up
+Group By
+Transpose
+Pivot/ Unpivot
+Keep/reduce rows
+Keep errors, duplicates
+keep/remove
+Use 1st row as header
+small project on cleaning data
+DAX(Data Analysis Expressions)
+Create measures
+Create quick measures
+Creating new DAX from existing DAX
+Creating COVID-19 DashBoard
+Creating Olympics DashBoard - not done
+
+29th October:
+Tableau
+Tableau product suite consist of: Tableau Desktop(Premium version 14 days trial), Public, Online, Server, Reader
+Tableau Tools: Developer Tools, Sharing Tools
+Tableau Developer consists of : Tableau Desktop, Public
+Tableau Desktop consists of: Tableau Desktop Personal, Professional
+Tableau Sharing Tools consists of: Tableau Online, Server,Reader
+Difference between Tableau Desktop & Public
+Tableau Desktop Installation(need business e-mail) - successsfuly signed-in. email id:nikhilneelesh1@gmail.com Company:Google
+Tableau Desktop Public Installation
+Measures(Rows) & Dimensions(Columns)
+Different Charts:Bar Chart
+				 Pie Chart
+				 Geographical maps
+				 Stacked column chart
+				 Tree map
+				 Scatter plot
+				 Bullet chart
+Filter based on: conditions
+				 Top
+				 Wildcard
+				 Date
+Working with Dates
+Keep Only option, View Data option for a particular subset of data
+Constructing monthly calender based on one measures(rows)
+Creating calculated field
+
+30th October:
+More charts: Stacked column chart
+			 Stacked bar chart
+			 Wordcloud
+			 Histogram
+			 Line chart
+			 Lollipop chart
+			 
+
+5th November:
+advance topics: attaching url to location for covid dash board
+creating calculated field
+granularity: how detailed the data is
+Aggegation: more aggregation, less granualarity
+work with time series
+automatic hierarchy
+Tableau joins: inner, full outer, left, right, union
+Blending
+different between joning and blending
+https://drive.google.com/drive/u/0/folders/1W8f3OIEIp7QqUCteJDBILdsbPFir7SgL
+
+6th November:
+Microsoft Excel: walkthrough + analytics (hands on link: https://docs.google.com/spreadsheets/d/1ROzmvWPA7l5Mp3sO_K6-7hC4f2gVaQksYoSZFYBMHqI/edit#gid=1562970549)
+Customizing the ribbon
+Quick access toolbar
+shortcuts:
+ctrl + arrow = navigating corners of table
+ctrl + shift + arrow = select cells
+shift + arrow = select cells
+Alt +(any letter coming on screen)
+math operaiton
+find & replace
+Transpose
+Text to columns function
+text functions: trim, upper, lower, left, right. len
+creating email address from names(concat)
+Relative Reference(doing some operation and doing dragging to bottom) and absolute reference($, shortcut F4)
+$A$2 = column and row do not change when copied
+A$2 = row does not change
+$A2 = column does not change
+data validation
+RANDBETWEEN(random number between a range)
+conditional formatting: data bars, color scales, icon sets
+display data as table(opens power query)
+sort and filter
+Different charts: area chart
+				  line chart
+				  custom combination of chart(line + area chart)
+				  bar chart
+				  bubble chart
+				  pie chart
+Protection to sheet/workbook(Protect sheet option/Protect workbook option)
+password to open/modify excel files
+Pivot table(Tableau like interface)
+Lookup(1st change to table): VLookup(should always be on left most side of the table), HLookup, XLookup. might require to make some absolute reference
+IFERROR function
+Macros
+Macros + Use Relative Reference option
+VBA(Visvual basic for application) scripting(can be done for macros. Not required)
